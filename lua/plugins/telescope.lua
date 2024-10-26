@@ -8,6 +8,7 @@ return {
             vim.keymap.set('n', '<C-p>', builtin.find_files, {})
             --REQUIRES RIPGREP
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+            vim.keymap.set('n', '<leader>fb', builtin.current_buffer_fuzzy_find, {})
         end
   },
   {
