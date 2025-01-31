@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "rust_analyzer", "cssls", "html" },
+        ensure_installed = { "lua_ls", "ts_ls", "rust_analyzer", "cssls", "html", "jsonls" },
         automatic_installation = true
       })
     end
@@ -20,6 +20,7 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.ts_ls.setup({})
+      lspconfig.jsonls.setup({})
       lspconfig.rust_analyzer.setup({})
       lspconfig.cssls.setup({})
       lspconfig.html.setup({})
