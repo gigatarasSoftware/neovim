@@ -28,8 +28,6 @@ require("lazy").setup({
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true }
 })
--- display line number
-vim.wo.number = true
 
 require("null-ls").setup({
   debug = true,
